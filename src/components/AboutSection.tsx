@@ -3,7 +3,7 @@ import storefrontImg from "@/assets/abs-fitness-storefront.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding bg-secondary">
+    <section id="about" className="py-24 md:py-32 px-4 bg-secondary">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <motion.div
@@ -12,8 +12,8 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="rounded-2xl overflow-hidden shadow-card">
-              <img src={storefrontImg} alt="ABS Fitness storefront" className="w-full h-auto object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-card group">
+              <img src={storefrontImg} alt="ABS Fitness storefront" className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
           </motion.div>
 
