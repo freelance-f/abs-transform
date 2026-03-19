@@ -54,7 +54,7 @@ const HeroSection = () => {
         >
           <a
             href="#contact"
-            className="bg-gradient-primary text-primary-foreground px-10 py-5 rounded-lg font-heading text-lg md:text-xl tracking-wider shadow-glow hover:scale-105 transition-all duration-300 animate-pulse-glow"
+            className="bg-gradient-primary text-primary-foreground px-10 py-5 rounded-lg font-heading text-lg md:text-xl tracking-wider shadow-glow hover:shadow-[0_0_40px_hsl(18_100%_56%/0.6)] hover:scale-105 transition-all duration-300"
           >
             START YOUR TRANSFORMATION
           </a>
@@ -86,16 +86,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-primary-foreground/30 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-primary rounded-full" />
-        </div>
-      </motion.div>
     </section>
   );
 };
