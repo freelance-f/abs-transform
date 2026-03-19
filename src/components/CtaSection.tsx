@@ -26,7 +26,7 @@ const CtaSection = () => {
             href="https://wa.me/919505494477?text=I'd like to claim my free trial session at ABS Fitness"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gradient-primary text-primary-foreground px-12 py-6 rounded-lg font-heading text-xl md:text-2xl tracking-wider shadow-glow hover:shadow-[0_0_40px_hsl(18_100%_56%/0.6)] hover:scale-105 transition-all duration-300"
+            className="inline-block bg-gradient-primary text-primary-foreground px-12 py-6 rounded-lg font-heading text-xl md:text-2xl tracking-wider shadow-glow hover:scale-105 transition-all duration-300 animate-pulse-glow"
           >
             CLAIM YOUR FREE TRIAL NOW
           </a>
