@@ -22,7 +22,7 @@ const Index = () => {
       <TrustSection />
       <ServicesSection />
       <MiniCta />
-      <TrainerSection />
+      
       <AboutSection />
       <WhyChooseSection />
       <TransformationSection />
