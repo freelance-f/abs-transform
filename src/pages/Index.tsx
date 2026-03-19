@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TrustSection from "@/components/TrustSection";
 import ServicesSection from "@/components/ServicesSection";
 import MiniCta from "@/components/MiniCta";
-import TrainerSection from "@/components/TrainerSection";
+
 import AboutSection from "@/components/AboutSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import TransformationSection from "@/components/TransformationSection";
