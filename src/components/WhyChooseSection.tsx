@@ -10,7 +10,7 @@ const reasons = [
 
 const WhyChooseSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="py-24 md:py-32 px-4 bg-background">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ const WhyChooseSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((r, i) => (
             <motion.div
               key={i}
@@ -32,7 +32,7 @@ const WhyChooseSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center p-8 rounded-xl bg-card border border-border hover:border-primary/20 transition-colors shadow-card"
+              className="text-center p-8 rounded-2xl bg-card border border-border hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 shadow-card hover:shadow-glow"
             >
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5">
                 <r.icon className="w-8 h-8 text-primary" />

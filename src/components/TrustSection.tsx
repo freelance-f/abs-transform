@@ -9,7 +9,7 @@ const testimonials = [
 
 const TrustSection = () => {
   return (
-    <section className="bg-secondary section-padding">
+    <section className="py-24 md:py-32 px-4 bg-secondary">
       <div className="container mx-auto">
         {/* Rating bar */}
         <motion.div
@@ -29,7 +29,7 @@ const TrustSection = () => {
         </motion.div>
 
         {/* Testimonials */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
@@ -37,8 +37,13 @@ const TrustSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="bg-secondary-foreground/5 border border-secondary-foreground/10 rounded-xl p-6"
+              className="bg-secondary-foreground/5 border border-secondary-foreground/10 rounded-2xl p-8 hover:border-primary/20 transition-all duration-300"
             >
+              <div className="flex gap-0.5 mb-4">
+                {[...Array(5)].map((_, j) => (
+                  <Star key={j} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
               <p className="text-primary-foreground/70 font-body leading-relaxed mb-4">"{t.text}"</p>
               <p className="text-primary font-heading tracking-wider text-sm">— {t.author}</p>
             </motion.div>
