@@ -1,14 +1,22 @@
 import { motion } from "framer-motion";
-import galleryCardio from "@/assets/gallery-cardio.jpg";
+import galleryDumbbells from "@/assets/gallery-dumbbells.jpg";
+import galleryWallArt from "@/assets/gallery-wall-art.jpg";
 import galleryFunctional from "@/assets/gallery-functional.jpg";
 import galleryWeights from "@/assets/gallery-weights.jpg";
-import galleryYoga from "@/assets/gallery-yoga.jpg";
+import galleryCrossfit from "@/assets/gallery-crossfit.jpg";
+import galleryMachines from "@/assets/gallery-machines.jpg";
+import gallerySquatRack from "@/assets/gallery-squat-rack.jpg";
+import galleryCardio from "@/assets/gallery-cardio.jpg";
 
 const images = [
-  { src: galleryWeights, alt: "Strength zone at ABS Fitness", caption: "Strength Zone" },
-  { src: galleryCardio, alt: "Cardio area at ABS Fitness", caption: "Cardio Area" },
-  { src: galleryFunctional, alt: "Functional training area", caption: "Functional Training" },
-  { src: galleryYoga, alt: "Yoga and stretching studio", caption: "Yoga & Mobility" },
+  { src: galleryDumbbells, alt: "Dumbbells and kettlebells at ABS Fitness", caption: "Free Weights Zone" },
+  { src: galleryFunctional, alt: "Functional training area with battle ropes", caption: "Functional Training" },
+  { src: galleryCrossfit, alt: "CrossFit rig and punching bag area", caption: "CrossFit & Boxing" },
+  { src: galleryWeights, alt: "Weight machines and equipment", caption: "Strength Machines" },
+  { src: gallerySquatRack, alt: "Squat rack and barbell station", caption: "Squat Rack Zone" },
+  { src: galleryMachines, alt: "Cable machines and plate loaded equipment", caption: "Machine Zone" },
+  { src: galleryCardio, alt: "Cardio area with treadmills", caption: "Cardio Area" },
+  { src: galleryWallArt, alt: "Motivational wall art at ABS Fitness", caption: "The Vibe" },
 ];
 
 const GallerySection = () => {
@@ -34,7 +42,7 @@ const GallerySection = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              transition={{ delay: i * 0.08 }}
               className="group rounded-xl overflow-hidden aspect-square relative cursor-pointer"
             >
               <img
@@ -42,7 +50,6 @@ const GallerySection = () => {
                 alt={img.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              {/* Dark overlay on hover */}
               <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/60 transition-all duration-500 flex items-end justify-center pb-6">
                 <p className="text-primary-foreground font-heading tracking-wider text-sm md:text-base opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                   {img.caption}
